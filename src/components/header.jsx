@@ -1,42 +1,49 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby"
+import "../styles/Header.scss"
+import { useTranslation } from "react-i18next"
+import Logo from "../images/venis-logo.png"
+import ShoppingCart from "../images/icons/shopping-cart.png"
+import MenuIcon from "../images/icons/menu-icon.png"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+export default function Header({ switchLang }) {
+  const [t, i18n] = useTranslation()
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+  return (
+    <header>
+      <div className="fixed">
+        <nav>
+          <img className="imagenLogo" src={Logo} alt="Logo" />
+          <ul>
+            <li>{t("aboutUs")}</li>
+            <li>{t("howWe")}</li>
+            <li>{t("benefits")}</li>
+            <li>{t("clients")}</li>
+            <li>Blog</li>
+            <li>
+              <button
+                onClick={() => {
+                  switchLang("en")
+                }}
+              >
+                EN
+              </button>
+              |
+              <button
+                onClick={() => {
+                  switchLang("es")
+                }}
+              >
+                ES
+              </button>
+            </li>
+            <li>
+              <img src={ShoppingCart} alt="Shopping Cart" />
+            </li>
+          </ul>
+          <img src={MenuIcon} alt="Menu" className="menuIcon" />
+        </nav>
+      </div>
+    </header>
+  )
 }
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header

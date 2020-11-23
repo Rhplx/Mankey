@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: `Venis Skin`,
     description: `Glowing Skin is Just One Step Away`,
-    author: `@gatsbyjs`,
+    author: `@rhplx`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,7 +16,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    `gatsby-plugin-sharp`, `gatsby-plugin-scroll-reveal`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -26,9 +26,18 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icons/icon-square.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Montserrat\:300,400,500,700`,
+        ],
+        display: 'swap'
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
