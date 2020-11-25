@@ -5,6 +5,7 @@ import Logo from "../images/venis-logo.png"
 import ShoppingCart from "../images/icons/shopping-cart.png"
 import MenuIcon from "../images/icons/menu-icon.png"
 import CloseMenu from "../images/icons/icon-close.png"
+import { Jump } from "react-jump"
 
 export default function Header({ switchLang }) {
   const [t] = useTranslation()
@@ -19,10 +20,18 @@ export default function Header({ switchLang }) {
           <nav>
             <img className="imagenLogo" src={Logo} alt="Logo" />
             <ul>
-              <li>{t("aboutUs")}</li>
-              <li>{t("howWe")}</li>
-              <li>{t("benefits")}</li>
-              <li>{t("clients")}</li>
+              <li>
+                <Jump target={".points"}>{t("aboutUs")}</Jump>
+              </li>
+              <li>
+                <Jump target={".howDo"}>{t("howWe")}</Jump>
+              </li>
+              <li>
+                <Jump target={".benefits"}>{t("benefits")}</Jump>
+              </li>
+              <li>
+                <Jump target={".partners"}>{t("clients")}</Jump>
+              </li>
               <li>Blog</li>
               <li>
                 <button
@@ -59,10 +68,18 @@ export default function Header({ switchLang }) {
           <img src={CloseMenu} alt="Close" />
         </button>
         <ul>
-          <li>{t("aboutUs")}</li>
-          <li>{t("howWe")}</li>
-          <li>{t("benefits")}</li>
-          <li>{t("clients")}</li>
+          <li onClick={e => showMenu()}>
+            <Jump target={".points"}>{t("aboutUs")}</Jump>
+          </li>
+          <li onClick={e => showMenu()}>
+            <Jump target={".howDo"}>{t("howWe")}</Jump>
+          </li>
+          <li onClick={e => showMenu()}>
+            <Jump target={".benefits"}>{t("benefits")}</Jump>
+          </li>
+          <li onClick={e => showMenu()}>
+            <Jump target={".partners"}>{t("clients")}</Jump>
+          </li>
           <li>Blog</li>
           <li>
             <button
