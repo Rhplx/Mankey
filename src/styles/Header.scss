@@ -16,6 +16,9 @@ header {
     .imagenLogo {
       width: 75px;
       margin-left: 20px;
+      @include media(lg) {
+        margin-left: 50px;
+      }
     }
     ul {
       display: inline-flex;
@@ -52,5 +55,59 @@ header {
         display: block;
       }
     }
+  }
+}
+.mobileContainer {
+  @include backgroundStyle;
+  background-image: url("../images/bg-menu.png");
+  background-position: top left;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  z-index: 100;
+  transition: all 0.5s ease-in;
+  .closeMenu {
+    position: absolute;
+    top: 55px;
+    right: 35px;
+    img {
+      width: 20px;
+    }
+  }
+  ul {
+    width: 100%;
+    margin-top: 10%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+
+    li {
+      font-size: 16px;
+      display: block;
+      width: 70%;
+      border-bottom: 1px solid #aebebf;
+      text-align: center;
+      padding-bottom: 60px;
+      text-transform: uppercase;
+      &:last-of-type,
+      &:nth-of-type(6) {
+        border: 0;
+      }
+      button {
+        font-size: 16px;
+        margin: 0 10px;
+      }
+      img {
+        width: 100px;
+      }
+    }
+  }
+  &.active {
+    left: 0;
   }
 }
