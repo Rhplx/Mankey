@@ -45,6 +45,10 @@ function SEO({ description, lang, meta, title }) {
           content: title,
         },
         {
+          property: `og:url`,
+          content: "https://veniskin.com",
+        },
+        {
           property: `og:description`,
           content: metaDescription,
         },

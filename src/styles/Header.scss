@@ -35,6 +35,9 @@ header {
         line-height: 108.5%;
         margin: 0 20px;
         cursor: pointer;
+        &:hover {
+          color: var(--gold);
+        }
         button {
           font-style: normal;
           font-weight: bold;
@@ -54,6 +57,9 @@ header {
       @include media(lg) {
         display: block;
       }
+    }
+    .languageIcon {
+      width: 30px;
     }
   }
 }

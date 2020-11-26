@@ -11,7 +11,7 @@
     "contactName": "Name",
     "contactEmail": "Email",
     "contactPhone": "Phone Number",
-    "contactTerms": "He leido y acepto el aviso de privacidad y los terminos y condiciones",
+    "contactTerms": "I've read and accepted both privacy policy and terms and conditions",
     "contactSubmit": "I Want Flawless Skin Today",
     "howTitle": "How We Do It",
     "howSubtitle": "Anti-Aging Facial Treatments With The Latest Skincare Technology",
@@ -63,6 +63,7 @@
     "faqThreeP": "After you register, one of our experienced advisors will reach out and ask you to answer a brief questionnaire. Then, they will provide you with a range of excellent options close to your location that best suit your needs.",
     "faqFourP": "Our products are superior to what’s available in the mainstream market due to our unique, exclusive partnerships with iconic brands. Rather than wasting your money and time on experiments, research, and products that don’t work, put your trust in us and our reputable brands to take care of your concerns and do all the hard work.",
     "call": "Book a Free Call",
+    "callSubtitle": "Everything your skin needs is just one click away. With Venis you will always have personalized skincare, guaranteeing you will see the results you are looking for",
     "terms": "Terms and Conditions",
     "privacity": "Privacity"
   }

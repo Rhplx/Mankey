@@ -86,7 +86,7 @@ export default function index() {
   return (
     <>
       <Layout switchLang={switchLang}>
-        <SEO title="Inicio" />
+        <SEO title="Home" />
         <section className="hero">
           <div className="fixed">
             <div className="heroText">
@@ -414,11 +414,7 @@ export default function index() {
           <article className="callImage"></article>
           <article className="callForm">
             <h3>{t("call")}</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Quisquam, beatae numquam repellat consectetur vero voluptatem
-              excepturi rem veniam in vel unde ullam.
-            </p>
+            <p>{t("callSubtitle")}</p>
             <form action="">
               <span>
                 <article>

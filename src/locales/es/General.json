@@ -12,7 +12,7 @@
     "contactName": "Nombre",
     "contactEmail": "Correo",
     "contactPhone": "Telefono",
-    "contactTerms": "He leido y acepto el aviso de privacidad y los terminos y condiciones",
+    "contactTerms": "He leído y acepto el aviso de privacidad y los terminos y condiciones",
     "contactSubmit": "Quiero una piel radiante hoy",
     "howTitle": "Cómo lo hacemos",
     "howSubtitle": "Tratamientos faciales antiedad con la última tecnología en Skincare.",
@@ -59,11 +59,13 @@
     "faqTwo": "¿Son un Spa de lujo o una marca de Skincare?",
     "faqThree": "¿Cómo funciona exactamente la consulta?",
     "faqFour": "¿Por qué elegir Venis en lugar de farmacias y los regímenes habituales de cuidado de la piel?",
-    "faqOneP": "Nuestros Socios se ubican cerca de tí de  en las principales ciudades de  México y  Estados Unidos.",
+    "faqOneP": "Nuestros Socios se ubican cerca de ti de  en las principales ciudades de  México y  Estados Unidos.",
     "faqTwoP": "¡No somos ninguno de las dos! En cambio, nos asociamos con los principales líderes en cuidado de la piel (tanto spas como líneas de productos) para brindarle el mejor tratamiento antienvejecimiento con los más altos estándares de calidad del mundo a precios preferenciales.",
     "faqThreeP": "Después de registrarse, uno de nuestros asesores expertos se comunicará con usted y le pedirá que conteste un breve cuestionario. Luego, le brindarán una gama de excelentes opciones cerca de su ubicación que mejor se adapten a sus necesidades.",
-    "faqFourP": "Our products are superior to what’s available in the mainstream market due to our unique, exclusive partnerships with iconic brands. Rather than wasting your money and time on experiments, research, and products that don’t work, put your trust in us and our reputable brands to take care of your concerns and do all the hard work.",
+    "faqFourP": "Nuestros productos son superiores a los disponibles en el mercado debido a nuestras sociedades únicas y exclusivas con compañías icónicas. En lugar de perder su dinero y tiempo en experimentos, investigaciones y productos que no funcionan, confíe en nosotros y en nuestras marcas de renombre para atender sus inquietudes y hacer todo el trabajo duro.",
     "call": "Suscríbete para las últimas novedades.",
+    "callSubtitle": "Todo lo que tu piel necesita está a un click de distancia. ¡Con Venis siempre tendrás cuidado personalizado, asegurándote que verás los resultados que estás buscando!",
     "terms": "Terminos y condiciones",
     "privacity": "Privacidad"
+
   }
