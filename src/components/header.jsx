@@ -86,21 +86,9 @@ export default function Header({ switchLang }) {
           </li>
           <li>Blog</li>
           <li>
-            <button
-              onClick={() => {
-                switchLang("en")
-              }}
-            >
-              EN
-            </button>
-            <button>|</button>
-            <button
-              onClick={() => {
-                switchLang("es")
-              }}
-            >
-              ES
-            </button>
+            <a href="/es">
+              <img className="languageIcon" src={Mexico} alt="Mexico" />
+            </a>
           </li>
           <li>
             <img src={ShoppingCart} alt="Shopping Cart" />

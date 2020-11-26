@@ -49,6 +49,10 @@ function SEO({ description, lang, meta, title }) {
           content: "https://veniskin.com",
         },
         {
+          property: `og:image`,
+          content: "../images/venis-cosmetics.png",
+        },
+        {
           property: `og:description`,
           content: metaDescription,
         },
