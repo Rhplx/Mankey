@@ -1,5 +1,5 @@
 import React from "react"
-
+import { Link } from "gatsby"
 import "../components/i18.js"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,7 +8,7 @@ import { initReactI18next } from "react-i18next"
 import { useEffect, useState } from "react"
 import "../styles/index.scss"
 import JelessiProducts from "../images/venis-products-jelessi.png"
-import DeepDive from "../images/image-deepdive.png"
+import DeepDive from "../images/image-deepdive.webp"
 import VenisLed from "../images/venis-ledlight.png"
 import VenisAnalysis from "../images/venis-analysis.png"
 import VenisSkincare from "../images/venis-skincare.png"
@@ -17,7 +17,7 @@ import Elevatione from "../images/partner-elevatione.png"
 import Jelessi from "../images/partner-jelessi.png"
 import Orogold from "../images/partner-orogold.png"
 import Predire from "../images/partner-predire.png"
-import ComputerImage from "../images/venis-mockups.png"
+import ComputerImage from "../images/venis-mockups.webp"
 import VenisBenefits from "../images/venis-group-benefits.png"
 import VenisBenefitsMobile from "../images/image-benefits-center.png"
 import IconLuxury from "../images/icons/icon-luxury.png"
@@ -177,14 +177,14 @@ export default function index() {
           <div className="fixed">
             <div className="pointsContainer">
               <article>
-                <img src={VenisLed} alt="Led Light Therapy" />
-                <h3>{t("pointsOne")}</h3>
-                <p>{t("pointsOneP")}</p>
-              </article>
-              <article>
                 <img src={VenisAnalysis} alt="Digital Analysis Device" />
                 <h3>{t("pointsTwo")}</h3>
                 <p>{t("pointsTwoP")}</p>
+              </article>
+              <article>
+                <img src={VenisLed} alt="Led Light Therapy" />
+                <h3>{t("pointsOne")}</h3>
+                <p>{t("pointsOneP")}</p>
               </article>
               <article>
                 <img
@@ -291,57 +291,41 @@ export default function index() {
             </span>
             <div className="reviewContainer">
               <article>
-                <img className="user" src={ResultOne} alt="" />
+                <img className="user" src={ResultOne} alt="Alicia" />
                 <h5>Alicia Hernandez</h5>
-                <h5>43 Años</h5>
+                <h6>43 Años</h6>
                 <span>
                   <img src={Quotes} alt="Comillas" />
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud.
-                  </p>
+                  <p>{t("testimonyOne")}</p>
                 </span>
               </article>
               <article>
-                <img className="user" src={ResultTwo} alt="" />
+                <img className="user" src={ResultTwo} alt="Martha" />
 
                 <h5>Martha Muñoz</h5>
-                <h5>57 Años</h5>
+                <h6>57 Años</h6>
                 <span>
                   <img src={Quotes} alt="Comillas" />
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud.
-                  </p>
+                  <p>{t("testimonyTwo")}</p>
                 </span>
               </article>
               <article>
-                <img className="user" src={ResultThree} alt="" />
+                <img className="user" src={ResultThree} alt="Carlos" />
                 <h5>Carlos</h5>
-                <h5>25 Años</h5>
+                <h6>25 Años</h6>
                 <span>
                   <img src={Quotes} alt="Comillas" />
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud.
-                  </p>
+                  <p>{t("testimonyThree")}</p>
                 </span>
               </article>
               <article>
-                <img className="user" src={ResultFour} alt="" />
+                <img className="user" src={ResultFour} alt="Luz Maria" />
                 <h5>Luz Maria</h5>
-                <h5>61 Años</h5>
+                <h6>61 Años</h6>
                 <span>
                   <img src={Quotes} alt="Comillas" />
 
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud.
-                  </p>
+                  <p>{t("testimonyFour")}</p>
                 </span>
               </article>
             </div>
@@ -396,7 +380,7 @@ export default function index() {
                     <img src={PlusIcon} alt="Plus" />
                     <img src={LessIcon} alt="Less" />
                   </span>
-                  <p id="faqOne">{t("faqFourP")}</p>
+                  <p id="faqOne">{t("faqOneP")}</p>
                 </div>
                 <div className="faqUnique">
                   <span id="titleTwo" onClick={e => showFaq("Two")}>
@@ -404,7 +388,7 @@ export default function index() {
                     <img src={PlusIcon} alt="Plus" />
                     <img src={LessIcon} alt="Less" />
                   </span>
-                  <p id="faqTwo">{t("faqFourP")}</p>
+                  <p id="faqTwo">{t("faqTwoP")}</p>
                 </div>
                 <div className="faqUnique">
                   <span id="titleThree" onClick={e => showFaq("Three")}>
@@ -412,7 +396,7 @@ export default function index() {
                     <img src={PlusIcon} alt="Plus" />
                     <img src={LessIcon} alt="Less" />
                   </span>
-                  <p id="faqThree">{t("faqFourP")}</p>
+                  <p id="faqThree">{t("faqThreeP")}</p>
                 </div>
                 <div className="faqUnique">
                   <span id="titleFour" onClick={e => showFaq("Four")}>
@@ -466,18 +450,35 @@ export default function index() {
           <div className="fixed">
             <div className="footerContainer">
               <span>
-                <img src={LogoWhite} alt="" />
+                <img src={LogoWhite} alt="Logo Blanco" />
                 <p>Venis © Copyright 2020</p>
               </span>
               <span>
                 <ul>
-                  <li>{t("privacity")}</li>
-                  <li>{t("terms")}</li>
                   <li>
-                    <img src={Instagram} alt="Instagram" />
+                    <Link to="/#">{t("privacity")}</Link>
                   </li>
                   <li>
-                    <img src={Facebook} alt="Facebook" />
+                    <Link to="/#">{t("terms")}</Link>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/veniskinmx/?hl=es"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={Instagram} alt="Instagram" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/veniskin/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {" "}
+                      <img src={Facebook} alt="Facebook" />
+                    </a>
                   </li>
                   <li>
                     <img src={WhatsApp} alt="WhatsApp" />

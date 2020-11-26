@@ -802,19 +802,20 @@ input:focus {
     background-position: top left 20%;
     background: url("../images/skinexpert-image.png");
     grid-template-columns: 1fr 2fr;
+    &:before {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.24);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
   }
   @include media(sm) {
     grid-template-columns: 1fr;
   }
-  &:before {
-    content: "";
-    background-color: rgba(0, 0, 0, 0.24);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-  }
+
   article {
     position: relative;
     z-index: 4;
@@ -901,7 +902,8 @@ input:focus {
         width: 80%;
         margin-top: -90px;
       }
-      h5 {
+      h5,
+      h6 {
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -1087,7 +1089,7 @@ input:focus {
     background-image: none;
     @include media(lg) {
       @include backgroundStyle;
-      background-image: url("../images/venis-contact-form-article.png");
+      background-image: url("../images/venis-contact-form-article.webp");
     }
     @include media(md) {
       min-height: 300px;
@@ -1216,6 +1218,10 @@ footer {
             font-size: 12px;
             line-height: 114.5%;
             color: white;
+            a {
+              color: white;
+              text-decoration: none;
+            }
             @include media(sm) {
               font-size: 8px;
               margin: 0 10px;

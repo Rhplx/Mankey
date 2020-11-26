@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www.)?veniskin.com$
+RewriteCond %{REQUEST_URI} !^/prueba/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /prueba/$1
+RewriteCond %{HTTP_HOST} ^(www.)?veniskin.com$
+RewriteRule ^(/)?$ prueba/index.html [L]
