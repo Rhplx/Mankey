@@ -125,8 +125,8 @@ export default function index() {
                 </span>
                 <span>
                   <article className="termsCheck">
-                    <input type="checkbox" name="" id="" />
-                    <label htmlFor="">{t("contactTerms")}</label>
+                    <input type="radio" className="option-input radio" name="terms"/>
+                    <label htmlFor="terms">{t("contactTerms")}</label>
                   </article>
                   <article>
                     <button className="secondaryButton">
@@ -436,8 +436,8 @@ export default function index() {
               </span>
               <span>
                 <article className="termsCheck">
-                  <input type="checkbox" name="" id="" />
-                  <label htmlFor="">{t("contactTerms")}</label>
+                  <input type="radio" className="option-input radio" name="terms"/>
+                  <label htmlFor="terms">{t("contactTerms")}</label>
                 </article>
                 <article>
                   <button className="primaryButton">{t("call")}</button>
