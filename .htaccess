@@ -1,3 +1,2 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} !^www.veniskin.com/prueba$
-RewriteRule ^(.*)$ https://veniskin.com/prueba/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.veniskin\.com [NC]
+RewriteRule (.*) https://veniskin.com/$1 [R=301,L]

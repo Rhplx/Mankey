@@ -125,7 +125,11 @@ export default function index() {
                 </span>
                 <span>
                   <article className="termsCheck">
-                    <input type="radio" className="option-input radio" name="terms"/>
+                    <input
+                      type="radio"
+                      className="option-input radio"
+                      name="terms"
+                    />
                     <label htmlFor="terms">{t("contactTerms")}</label>
                   </article>
                   <article>
@@ -432,7 +436,11 @@ export default function index() {
               </span>
               <span>
                 <article className="termsCheck">
-                  <input type="radio" className="option-input radio" name="terms"/>
+                  <input
+                    type="radio"
+                    className="option-input radio"
+                    name="terms"
+                  />
                   <label htmlFor="terms">{t("contactTerms")}</label>
                 </article>
                 <article>

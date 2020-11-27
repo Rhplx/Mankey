@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/prueba`,
+  // pathPrefix: `./`,
   siteMetadata: {
     title: `🌿Venis Skin - Luxurious Advanced Skin Care Service Near You`,
     description: `The First and Only Personalized Tool to Give you the Results you are Looking For in your Skin`,
