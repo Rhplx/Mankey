@@ -49,9 +49,7 @@ export default function index() {
       if (typeof window !== "undefined" && window) {
         setWindowLoaded(true)
         i18n.use(initReactI18next).init({
-          lng: localStorage.getItem("i18nextLng")
-            ? localStorage.getItem("i18nextLng")
-            : "en",
+          lng: "en",
         })
       }
     }
