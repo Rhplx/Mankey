@@ -89,7 +89,7 @@ export default function index() {
         <section className="hero">
           <div className="fixed">
             <div className="heroText">
-              <h1>{t("heroTitle")}</h1>
+              <h2>{t("heroTitle")}</h2>
               <p>{t("heroParagraph")}</p>
               <p>{t("heroParagraphTwo")}</p>
               <span>
@@ -106,7 +106,7 @@ export default function index() {
               data-sal-delay="200"
               data-sal-easing="ease"
             >
-              <h2>{t("contactTitle")}</h2>
+              <h3>{t("contactTitle")}</h3>
               <form action="">
                 <span>
                   <article>
@@ -155,7 +155,7 @@ export default function index() {
               >
                 {t("howTitle")}
               </p>
-              <h3>{t("howTitle")}</h3>
+              <h5 className="shadowMain">{t("howTitle")}</h5>
             </span>
             <h4>{t("howSubtitle")}</h4>
             <p className="generalParagraph">{t("howParagraph")}</p>
