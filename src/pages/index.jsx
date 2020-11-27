@@ -17,6 +17,7 @@ import Elevatione from "../images/partner-elevatione.png"
 import Jelessi from "../images/partner-jelessi.png"
 import Orogold from "../images/partner-orogold.png"
 import Predire from "../images/partner-predire.png"
+import Lavelier from "../images/Lavelier.png"
 import ComputerImage from "../images/venis-mockups.webp"
 import VenisBenefits from "../images/venis-group-benefits.png"
 import VenisBenefitsMobile from "../images/image-benefits-center.png"
@@ -146,9 +147,14 @@ export default function index() {
           </article>
           <article>
             <span className="titleShadow">
-              <h2 data-sal="fade" data-sal-delay="500" data-sal-easing="ease">
+              <p
+                className="shadowEffect"
+                data-sal="fade"
+                data-sal-delay="500"
+                data-sal-easing="ease"
+              >
                 {t("howTitle")}
-              </h2>
+              </p>
               <h3>{t("howTitle")}</h3>
             </span>
             <h4>{t("howSubtitle")}</h4>
@@ -160,7 +166,7 @@ export default function index() {
           <div className="deepContainer">
             <article>
               <span className="titleShadow">
-                <h2>{t("deepTitle")}</h2>
+                <p className="shadowEffect">{t("deepTitle")}</p>
                 <h3>{t("deepTitle")}</h3>
               </span>
               <h4>{t("deepSubtitle")}</h4>
@@ -203,9 +209,14 @@ export default function index() {
           <div className="fixed">
             <div className="partnersContainer">
               <span className="titleShadow">
-                <h2 data-sal="fade" data-sal-delay="500" data-sal-easing="ease">
+                <p
+                  className="shadowEffect"
+                  data-sal="fade"
+                  data-sal-delay="500"
+                  data-sal-easing="ease"
+                >
                   {t("partnersTitle")}
-                </h2>
+                </p>
                 <h3>{t("partnersTitle")}</h3>
               </span>
               <h4>{t("partnersSubtitle")}</h4>
@@ -216,6 +227,7 @@ export default function index() {
                 <img src={Jelessi} alt="Jelessi" />
                 <img src={Orogold} alt="Orogold" />
                 <img src={Predire} alt="Predire" />
+                <img src={Lavelier} alt="Predire" />
               </div>
               <div className="computer">
                 <h5>{t("partnersParagraph")}</h5>
@@ -235,9 +247,14 @@ export default function index() {
         <section className="benefits">
           <div className="textBenefits">
             <span className="titleShadow">
-              <h2 data-sal="fade" data-sal-delay="500" data-sal-easing="ease">
+              <p
+                className="shadowEffect"
+                data-sal="fade"
+                data-sal-delay="500"
+                data-sal-easing="ease"
+              >
                 {t("benefitsTitle")}
-              </h2>
+              </p>
               <h3>{t("benefitsTitle")}</h3>
             </span>
             <div className="benefitsContainer">
@@ -286,9 +303,14 @@ export default function index() {
         <section className="results">
           <div className="fixed">
             <span className="titleShadow">
-              <h2 data-sal="fade" data-sal-delay="500" data-sal-easing="ease">
+              <p
+                className="shadowEffect"
+                data-sal="fade"
+                data-sal-delay="500"
+                data-sal-easing="ease"
+              >
                 {t("resultsTitle")}
-              </h2>
+              </p>
               <h3>{t("resultsTitle")}</h3>
             </span>
             <div className="reviewContainer">
@@ -336,9 +358,14 @@ export default function index() {
         <section className="gallery">
           <div className="fixed">
             <span className="titleShadow">
-              <h2 data-sal="fade" data-sal-delay="500" data-sal-easing="ease">
+              <p
+                className="shadowEffect"
+                data-sal="fade"
+                data-sal-delay="500"
+                data-sal-easing="ease"
+              >
                 {t("gallery")}
-              </h2>
+              </p>
               <h3>{t("gallery")}</h3>
             </span>
             <div className="galleryContainer">
@@ -365,13 +392,14 @@ export default function index() {
             <div className="faqContainer">
               <article>
                 <span className="titleShadow">
-                  <h2
+                  <p
+                    className="shadowEffect"
                     data-sal="fade"
                     data-sal-delay="500"
                     data-sal-easing="ease"
                   >
                     FAQ
-                  </h2>
+                  </p>
                   <h3>FAQ</h3>
                 </span>
               </article>

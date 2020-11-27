@@ -22,7 +22,7 @@
   display: block;
   position: relative;
 
-  h2 {
+  .shadowEffect {
     font-style: normal;
     font-weight: bold;
     font-size: 67px;
@@ -131,6 +131,9 @@ input:focus {
   background-image: url("../images/hero-bg.png");
   padding: 200px 0 320px;
   margin-top: -100px;
+  @include media(xl) {
+    background-position: bottom right 40%;
+  }
   @include media(lg) {
     background-image: url("../images/hero-bg-middle.png");
     padding: 180px 50px 900px;
@@ -211,6 +214,7 @@ input:focus {
     background: #ffffff;
     box-shadow: 4px 7px 18px rgba(0, 0, 0, 0.25);
     padding: 40px 20px;
+    margin: 0 50px;
     @include media(lg) {
       width: 80%;
       margin: auto;
@@ -251,6 +255,9 @@ input:focus {
     form {
       width: 80%;
       margin: auto;
+      @include media(xl) {
+        width: 90%;
+      }
       @include media(md) {
         width: 100%;
       }
@@ -405,19 +412,6 @@ input:focus {
         text-align: center;
       }
 
-      h2 {
-        text-align: right;
-        top: -20px;
-        right: 0;
-        @include media(lg) {
-          left: 0;
-          right: auto;
-          text-align: left;
-        }
-        @include media(sm) {
-          text-align: center;
-        }
-      }
       h3 {
         color: white;
         text-align: right;
@@ -475,6 +469,20 @@ input:focus {
           margin-bottom: 20px;
         }
       }
+      .shadowEffect {
+        text-align: right;
+        top: -20px;
+        right: 0;
+        color: rgba(255, 255, 255, 0.08);
+        @include media(lg) {
+          left: 0;
+          right: auto;
+          text-align: left;
+        }
+        @include media(sm) {
+          text-align: center;
+        }
+      }
     }
   }
 }
@@ -490,7 +498,7 @@ input:focus {
     }
     article {
       span {
-        h2 {
+        .shadowEffect {
           color: rgba(69, 90, 100, 0.03);
           top: -50px;
           @include media(md) {
@@ -623,13 +631,19 @@ input:focus {
   }
   .partnersContainer {
     text-align: center;
-    h2 {
+    .shadowEffect {
       color: rgba(69, 90, 100, 0.03);
       text-align: center;
       width: 100%;
       top: -20px;
+      font-size: 67px;
+      line-height: 65px;
+
       @include media(xl) {
-        top: 70px;
+        top: 50px;
+      }
+      @include media(md) {
+        font-size: 25px;
       }
     }
     h3 {
@@ -676,14 +690,16 @@ input:focus {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 100px;
+      padding: 80px;
       @include media(xl) {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         grid-gap: 30px;
       }
+
       @include media(lg) {
         padding: 100px 20px;
+        grid-template-columns: repeat(3, 1fr);
       }
       @include media(sm) {
         display: flex;
@@ -793,7 +809,7 @@ input:focus {
     }
     span {
       width: 100%;
-      h2 {
+      .shadowEffect {
         color: rgba(69, 90, 100, 0.03);
       }
     }
@@ -874,6 +890,19 @@ input:focus {
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
+  @include media(xl) {
+    background-position: bottom left 20%;
+    &:before {
+      content: "";
+      background-color: rgba(0, 0, 0, 0.13);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+  }
+
   @include media(lg) {
     padding: 50px 0;
   }
@@ -884,11 +913,6 @@ input:focus {
     &:before {
       content: "";
       background-color: rgba(0, 0, 0, 0.24);
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
     }
   }
   @include media(sm) {
@@ -945,9 +969,8 @@ input:focus {
       width: 80%;
       margin: 20px auto 60px;
     }
-    h2 {
+    .shadowEffect {
       color: rgba(69, 90, 100, 0.03);
-
       width: 100%;
       text-align: center;
       @include media(md) {
@@ -1022,7 +1045,7 @@ input:focus {
 .gallery {
   span {
     text-align: center;
-    h2 {
+    .shadowEffect {
       color: rgba(69, 90, 100, 0.03);
       text-align: center;
       width: 100%;
@@ -1079,6 +1102,11 @@ input:focus {
         display: flex;
         justify-content: center;
         align-items: center;
+        .shadowEffect {
+          color: rgba(69, 90, 100, 0.03);
+          top: 0;
+          left: -10px;
+        }
         h3 {
           border-bottom: 1px solid var(--gold);
         }
