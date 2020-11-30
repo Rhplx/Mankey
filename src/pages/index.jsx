@@ -157,7 +157,7 @@ export default function index() {
               </p>
               <h5 className="shadowMain">{t("howTitle")}</h5>
             </span>
-            <h4>{t("howSubtitle")}</h4>
+            <h2 className="howSubtitle">{t("howSubtitle")}</h2>
             <p className="generalParagraph">{t("howParagraph")}</p>
             <p className="generalParagraph">{t("howParagraphTwo")}</p>
           </article>
@@ -167,9 +167,9 @@ export default function index() {
             <article>
               <span className="titleShadow">
                 <p className="shadowEffect">{t("deepTitle")}</p>
-                <h3>{t("deepTitle")}</h3>
+                <h3 className="shadowMain">{t("deepTitle")}</h3>
               </span>
-              <h4>{t("deepSubtitle")}</h4>
+              <h3 className="deepSubtitle">{t("deepSubtitle")}</h3>
               <p className="generalParagraph">{t("deepParagraph")}</p>
               <p className="generalParagraph">{t("deepParagraphTwo")}</p>
               <span className="buttonContainer">
@@ -186,7 +186,7 @@ export default function index() {
             <div className="pointsContainer">
               <article>
                 <img src={VenisAnalysis} alt="Digital Analysis Device" />
-                <h3>{t("pointsTwo")}</h3>
+                <h6>{t("pointsTwo")}</h6>
                 <p>{t("pointsTwoP")}</p>
               </article>
               <article>
@@ -199,7 +199,7 @@ export default function index() {
                   src={VenisSkincare}
                   alt="Ultramodern equipment and Skincare"
                 />
-                <h3>{t("pointsThree")}</h3>
+                <h2>{t("pointsThree")}</h2>
                 <p>{t("pointsThreeP")}</p>
               </article>
             </div>
@@ -217,9 +217,9 @@ export default function index() {
                 >
                   {t("partnersTitle")}
                 </p>
-                <h3>{t("partnersTitle")}</h3>
+                <h2 className="shadowMain">{t("partnersTitle")}</h2>
               </span>
-              <h4>{t("partnersSubtitle")}</h4>
+              <h3 className="partnersSub">{t("partnersSubtitle")}</h3>
               <p>{t("partnersSubtitleTwo")}</p>
               <div className="partnersImage">
                 <img src={Celestolite} alt="Celestolite" />
@@ -230,7 +230,7 @@ export default function index() {
                 <img src={Lavelier} alt="Predire" />
               </div>
               <div className="computer">
-                <h5>{t("partnersParagraph")}</h5>
+                <h6>{t("partnersParagraph")}</h6>
                 <p>{t("partnersParagraphTwo")}</p>
                 <p>{t("partnersParagraphThree")}</p>
                 <img src={ComputerImage} alt="Computer" />
@@ -255,7 +255,7 @@ export default function index() {
               >
                 {t("benefitsTitle")}
               </p>
-              <h3>{t("benefitsTitle")}</h3>
+              <h3 className="shadowMain">{t("benefitsTitle")}</h3>
             </span>
             <div className="benefitsContainer">
               <article>
@@ -311,13 +311,13 @@ export default function index() {
               >
                 {t("resultsTitle")}
               </p>
-              <h3>{t("resultsTitle")}</h3>
+              <h3 className="shadowMain">{t("resultsTitle")}</h3>
             </span>
             <div className="reviewContainer">
               <article>
                 <img className="user" src={ResultOne} alt="Alicia" />
-                <h5>Alicia Hernandez</h5>
-                <h6>43 Años</h6>
+                <p>Alicia Hernandez</p>
+                <p>43 Años</p>
                 <span>
                   <img src={Quotes} alt="Comillas" />
                   <p>{t("testimonyOne")}</p>
@@ -325,9 +325,8 @@ export default function index() {
               </article>
               <article>
                 <img className="user" src={ResultTwo} alt="Martha" />
-
-                <h5>Martha Muñoz</h5>
-                <h6>57 Años</h6>
+                <p>Martha Muñoz</p>
+                <p>57 Años</p>
                 <span>
                   <img src={Quotes} alt="Comillas" />
                   <p>{t("testimonyTwo")}</p>
@@ -335,8 +334,8 @@ export default function index() {
               </article>
               <article>
                 <img className="user" src={ResultThree} alt="Carlos" />
-                <h5>Carlos</h5>
-                <h6>25 Años</h6>
+                <p>Carlos</p>
+                <p>25 Años</p>
                 <span>
                   <img src={Quotes} alt="Comillas" />
                   <p>{t("testimonyThree")}</p>
@@ -344,8 +343,8 @@ export default function index() {
               </article>
               <article>
                 <img className="user" src={ResultFour} alt="Luz Maria" />
-                <h5>Luz Maria</h5>
-                <h6>61 Años</h6>
+                <p>Luz Maria</p>
+                <p>61 Años</p>
                 <span>
                   <img src={Quotes} alt="Comillas" />
 
@@ -366,7 +365,7 @@ export default function index() {
               >
                 {t("gallery")}
               </p>
-              <h3>{t("gallery")}</h3>
+              <h6 className="shadowMain">{t("gallery")}</h6>
             </span>
             <div className="galleryContainer">
               <article>
@@ -400,13 +399,13 @@ export default function index() {
                   >
                     FAQ
                   </p>
-                  <h3>FAQ</h3>
+                  <h6 className="shadowMain">FAQ</h6>
                 </span>
               </article>
               <article>
                 <div className="faqUnique">
                   <span id="titleOne" onClick={e => showFaq("One")}>
-                    <h5>{t("faqOne")}</h5>
+                    <h6>{t("faqOne")}</h6>
                     <img src={PlusIcon} alt="Plus" />
                     <img src={LessIcon} alt="Less" />
                   </span>
@@ -414,7 +413,7 @@ export default function index() {
                 </div>
                 <div className="faqUnique">
                   <span id="titleTwo" onClick={e => showFaq("Two")}>
-                    <h5>{t("faqTwo")}</h5>
+                    <h4>{t("faqTwo")}</h4>
                     <img src={PlusIcon} alt="Plus" />
                     <img src={LessIcon} alt="Less" />
                   </span>
@@ -422,7 +421,7 @@ export default function index() {
                 </div>
                 <div className="faqUnique">
                   <span id="titleThree" onClick={e => showFaq("Three")}>
-                    <h5>{t("faqThree")}</h5>
+                    <h4>{t("faqThree")}</h4>
                     <img src={PlusIcon} alt="Plus" />
                     <img src={LessIcon} alt="Less" />
                   </span>
@@ -430,7 +429,7 @@ export default function index() {
                 </div>
                 <div className="faqUnique">
                   <span id="titleFour" onClick={e => showFaq("Four")}>
-                    <h5>{t("faqFour")}</h5>
+                    <h4>{t("faqFour")}</h4>
                     <img src={PlusIcon} alt="Plus" />
                     <img src={LessIcon} alt="Less" />
                   </span>
@@ -443,7 +442,7 @@ export default function index() {
         <section className="call">
           <article className="callImage"></article>
           <article className="callForm">
-            <h3>{t("call")}</h3>
+            <h5>{t("call")}</h5>
             <p>{t("callSubtitle")}</p>
             <form action="">
               <span>

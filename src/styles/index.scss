@@ -450,13 +450,16 @@ input:focus {
         padding: 680px 40px 100px;
       }
 
-      h4 {
+      h5 {
         text-align: right;
         color: white;
         margin-bottom: 80px;
         @include media(lg) {
           text-align: left;
         }
+      }
+      .howSubtitle {
+        color: white;
       }
       p {
         color: white;
@@ -530,7 +533,7 @@ input:focus {
         @include media(sm) {
           padding: 20px 40px 0;
         }
-        h4 {
+        .deepSubtitle {
           margin-bottom: 40px;
         }
         p {
@@ -595,7 +598,9 @@ input:focus {
         border-radius: 200px;
         padding: 5px;
       }
-      h3 {
+      h3,
+      h6,
+      h2 {
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
@@ -651,7 +656,7 @@ input:focus {
         font-size: 35px;
       }
     }
-    h3 {
+    h2 {
       margin-bottom: 20px;
       &::after {
         content: "";
@@ -669,7 +674,7 @@ input:focus {
         padding: 70px 20px;
       }
     }
-    h4 {
+    .partnersSub {
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
@@ -725,7 +730,7 @@ input:focus {
       }
     }
     .computer {
-      h5 {
+      h6 {
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
@@ -1009,8 +1014,7 @@ input:focus {
         width: 80%;
         margin-top: -90px;
       }
-      h5,
-      h6 {
+      p {
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -1039,6 +1043,7 @@ input:focus {
           padding: 25px;
           position: relative;
           z-index: 1;
+          color: black;
           @include media(md) {
             padding: 25px 10px;
           }
@@ -1112,7 +1117,7 @@ input:focus {
           top: 0;
           left: -10px;
         }
-        h3 {
+        h6 {
           border-bottom: 1px solid var(--gold);
         }
       }
@@ -1133,7 +1138,8 @@ input:focus {
             margin: 10px 0 30px;
             align-items: center;
             cursor: pointer;
-            h5 {
+            h4,
+            h6 {
               font-style: normal;
               font-weight: bold;
               font-size: 14px;
@@ -1215,7 +1221,7 @@ input:focus {
     @include media(xl) {
       padding: 50px 45px;
     }
-    h3 {
+    h5 {
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
