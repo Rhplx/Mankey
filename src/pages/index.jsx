@@ -42,6 +42,7 @@ import Instagram from "../images/icons/icon-ig.png"
 import Facebook from "../images/icons/icon-fb.png"
 import Share from "../images/icons/icon-share.png"
 import Quotes from "../images/comillas.png"
+import ExpertMobile from "../images/expert-banner-mobile.png"
 
 export default function index() {
   const [windowLoaded, setWindowLoaded] = useState(undefined)
@@ -86,6 +87,84 @@ export default function index() {
     <>
       <Layout switchLang={switchLang}>
         <SEO title="Home" />
+        <section className="seoParagraphs">
+          <h1>Venis Hydrafacial y Hollywood Peel</h1>
+
+          <p>
+            At Venis we want to provide you with unique experiences in skin
+            care, we have cutting-edge skincare treatments, guaranteeing results
+            from the first appointment. Our treatments are personalized and
+            specialized depending on the needs and concerns of each of our
+            patients, we offer results without the need for operating rooms,
+            without the need for recovery time. Luxurious Advanced Skin Care
+            Service Near You
+          </p>
+          <p>
+            we revolutionize skin care at the hands of the most exclusive Spas
+            in the country and the most prestigious products on the market. Some
+            of our are Hydrafacial, generating Facelifting effects without
+            surgery. Remove red spots on the skin, acne, cloth, bags, dark
+            circles, phototherapy, anti-aging, etc. Venis Hydrafacial y
+            Hollywood Peel
+          </p>
+          <p>Venis creates experiences that rewind time on your skin.</p>
+          <h2>Hydrafacial</h2>
+          <p>
+            Hydrafacial: The treatment to hydrate and rejuvenate the skin of
+            your face. The Hydrafacial is a non-invasive treatment for the face
+            that combines cleansing, removal of impurities and peeling, and
+            infiltration of serums in a single session to obtain fresh, healthy,
+            radiant and glowing skin.
+          </p>
+          <p>
+            This treatment has benefits that help improve skin hydration and
+            eliminate the appearance of fine lines, hyperpigmentation, oily skin
+            control, and wrinkles.
+          </p>
+          <p>
+            The suggested cost to the public in Mexico varies according to the
+            geographic area and the additional services that the specialist adds
+            to the treatment.
+          </p>
+          <p>
+            First, a deep cleaning is carried out where all the impurities from
+            the skin of the face are removed. Once the face is completely clean,
+            a bath of vitamins, antioxidants, and moisturizers is applied,
+            through serums. Luxurious Advanced Skin Care Service Near You
+          </p>
+          <h2>Non surgical face lifting</h2>
+          <p>
+            At Venis we want to provide you with the best treatments, one of
+            them is the lifting without surgery.
+          </p>
+          <h3>What is a non surgical face lifting? </h3>
+          <p>
+            It is a minimally invasive non-surgical face lift that aims to
+            improve the appearance of wrinkles and fine lines, giving patients a
+            more youthful appearance. We personalize the treatment, adjusting to
+            the needs of each of our clients to guarantee and maximize the
+            desired results.
+          </p>
+          <p>
+            This treatment is used to enjoy a younger appearance without having
+            to undergo surgery, obtaining multiple advantages since the
+            application requires a few minutes and practically does not require
+            a recovery period. In addition, one of the great advantages of a
+            non-surgical facelift is its reduced cost. We recommend the
+            treatment for both men and women between 40 and 60 years of age to
+            prevent skin loss and to be able to reinforce elasticity in time
+            without damaging the skin. Venis Hydrafacial y Hollywood Peel
+          </p>
+          <p>
+            This ultrasound-based treatment is used to improve wrinkles and
+            cleavage lines, lift the skin of the neck, eyebrow and lower chin,
+            it can also be applied on the cheeks, jaw profile, expression lines
+            of the eyes, narrowing and elevation of the nose, lifting of
+            eyebrows, perfection of the appearance of the neck, rejuvenation of
+            hands and feet, improvement of flaccidity in arms, legs and Venis
+            Hydrafacial y Hollywood Peel buttocks.
+          </p>
+        </section>
         <section className="hero">
           <div className="fixed">
             <div className="heroText">
@@ -293,7 +372,9 @@ export default function index() {
           </div>
         </section>
         <section className="expert">
-          <article></article>
+          <article>
+            <img src={ExpertMobile} alt="Expert" />
+          </article>
           <article>
             <h2>{t("skincareTitle")}</h2>
             <p>{t("skincareSubtitle")}</p>

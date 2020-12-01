@@ -13,11 +13,17 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 80px;
+    @include media(md) {
+      padding: 0 20px;
+    }
     .imagenLogo {
       width: 75px;
       margin-left: 20px;
       @include media(lg) {
         margin-left: 50px;
+      }
+      @include media(md) {
+        margin-left: 20px;
       }
     }
     ul {

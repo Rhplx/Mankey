@@ -126,13 +126,21 @@ input:focus {
   outline-color: var(--gold);
 }
 /* SECTION: Index Styles */
+.seoParagraphs {
+  color: transparent;
+  position: absolute;
+  z-index: -10;
+}
+
 .hero {
   @include backgroundStyle;
   background-image: url("../images/hero-bg.png");
   padding: 200px 0 320px;
   margin-top: -100px;
   @include media(xl) {
-    background-position: bottom right 40%;
+    background-position: bottom right 20%;
+    background-image: url("../images/hero-bg-ali.png");
+    padding: 200px 0 120px;
   }
   @include media(lg) {
     background-image: url("../images/hero-bg-middle.png");
@@ -144,7 +152,10 @@ input:focus {
     background-position: bottom;
   }
   @include media(sm) {
-    padding: 150px 15px 650px;
+    background-image: url("../images/hero-xs.png");
+    padding: 150px 15px 600px;
+    background-size: 180%;
+    background-position: bottom right 50%;
   }
   .heroText {
     width: 50%;
@@ -434,7 +445,7 @@ input:focus {
       background-position: center;
       background-repeat: no-repeat;
       @include media(lg) {
-        padding: 100px 80px 100px;
+        padding: 100px 0 100px;
       }
     }
     &:nth-of-type(2) {
@@ -460,6 +471,11 @@ input:focus {
       }
       .howSubtitle {
         color: white;
+        text-align: right;
+        margin-bottom: 40px;
+        @include media(lg) {
+          text-align: left;
+        }
       }
       p {
         color: white;
@@ -493,6 +509,9 @@ input:focus {
   @include backgroundStyle;
   background-image: url("../images/deep-dive-bg.png");
   padding: 100px 0;
+  @include media(lg) {
+    padding: 50px 0;
+  }
   .deepContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -895,13 +914,14 @@ input:focus {
 .expert {
   @include backgroundStyle;
   background-image: url("../images/venis-banner-skincareexpert.png");
-  padding: 100px 0;
-  background-position: top left 40%;
+  background-position: top left;
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
+  padding: 100px 0;
   @include media(xl) {
-    background-position: bottom left 20%;
+    background-position: bottom left 40%;
+    background-image: url("../images/banner-expert.png");
     &:before {
       content: "";
       background-color: rgba(0, 0, 0, 0.13);
@@ -912,18 +932,16 @@ input:focus {
       left: 0;
     }
   }
-
   @include media(lg) {
     padding: 50px 0;
   }
   @include media(md) {
     background-position: top left 20%;
-    background: url("../images/skinexpert-image.png");
-    grid-template-columns: 1fr 2fr;
-    &:before {
-      content: "";
-      background-color: rgba(0, 0, 0, 0.24);
-    }
+    background: none;
+    grid-template-columns: 1fr;
+    padding-top: 0;
+    margin-top: 50px;
+    background-color: #c3beba;
   }
   @include media(sm) {
     grid-template-columns: 1fr;
@@ -942,31 +960,44 @@ input:focus {
       line-height: 39px;
       text-transform: uppercase;
       color: white;
-      padding-bottom: 40px;
+      padding-bottom: 5px;
       border-bottom: 1px solid #c8ecec;
-      margin-bottom: 30px;
+      @include media(xl) {
+        font-size: 25px;
+      }
     }
     p {
       font-style: normal;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 29px;
       letter-spacing: 0.11em;
       color: white;
       padding: 20px 190px 0 0;
+      margin-bottom: 20px;
       @include media(xl) {
-        padding: 20px 12px 0 0;
+        padding: 20px 0 0 0;
       }
     }
     button {
       padding: 0 50px;
-      margin: 60px 0;
+      margin: 0;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
+    &:first-of-type {
+      background-color: #c3beba;
+      img {
+        display: none;
+        width: 100%;
+        @include media(md) {
+          display: block;
+        }
+      }
+    }
     &:nth-of-type(2) {
-      padding: 100px 80px;
+      padding: 20px 80px;
       @include media(md) {
-        padding: 100px 40px;
+        text-align: center;
       }
     }
   }
