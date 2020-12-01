@@ -88,7 +88,7 @@ export default function index() {
       <Layout switchLang={switchLang}>
         <SEO title="Home" />
         <section className="seoParagraphs">
-          <h1>Venis Hydrafacial y Hollywood Peel</h1>
+          <h1>Venis Hydrafacial & Non surgical face lifting</h1>
 
           <p>
             At Venis we want to provide you with unique experiences in skin
@@ -153,7 +153,8 @@ export default function index() {
             non-surgical facelift is its reduced cost. We recommend the
             treatment for both men and women between 40 and 60 years of age to
             prevent skin loss and to be able to reinforce elasticity in time
-            without damaging the skin. Venis Hydrafacial y Hollywood Peel
+            without damaging the skin. Venis Hydrafacial & Non surgical face
+            lifting
           </p>
           <p>
             This ultrasound-based treatment is used to improve wrinkles and
