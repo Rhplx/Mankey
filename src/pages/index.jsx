@@ -51,7 +51,7 @@ export default function index() {
       if (typeof window !== "undefined" && window) {
         setWindowLoaded(true)
         i18n.use(initReactI18next).init({
-          lng: "en",
+          lng: "es",
         })
       }
     }
@@ -88,82 +88,103 @@ export default function index() {
       <Layout switchLang={switchLang}>
         <SEO title="Home" />
         <section className="seoParagraphs">
-          <h1>Venis Hydrafacial & Non surgical face lifting</h1>
+          <h1>Venis Hydrafacial y Hollywood Peel</h1>
 
           <p>
-            At Venis we want to provide you with unique experiences in skin
-            care, we have cutting-edge skincare treatments, guaranteeing results
-            from the first appointment. Our treatments are personalized and
-            specialized depending on the needs and concerns of each of our
-            patients, we offer results without the need for operating rooms,
-            without the need for recovery time. Luxurious Advanced Skin Care
-            Service Near You
+            En Venis queremos proporcionarte experiencias únicas en el cuidado
+            de la piel, contamos con tratamientos de skincare a la vanguardia,
+            garantizando resultados desde la primera cita. Nuestros tratamientos
+            son personalizados y especializados dependiendo las necesidades y
+            preocupaciones de cada uno de nuestros pacientes, ofrecemos
+            resultados sin necesidad de quirófanos ni agujas y lo mejor sin
+            necesidad de recuperación, revolucionamos el cuidado de la piel de
+            la mano de los Spas más exclusivos del país y los productos con
+            mayor prestigio del mercado. Venis Hydrafacial y Hollywood Peel
           </p>
           <p>
-            we revolutionize skin care at the hands of the most exclusive Spas
-            in the country and the most prestigious products on the market. Some
-            of our are Hydrafacial, generating Facelifting effects without
-            surgery. Remove red spots on the skin, acne, cloth, bags, dark
-            circles, phototherapy, anti-aging, etc. Venis Hydrafacial y
-            Hollywood Peel
+            Algunos de nuestros son Hydrafacial, Hollywood Peel, Lifting facial
+            sin cirugía, manchas rojas en la piel, acné, paño, bolsas, ojeras,
+            fototerapia, anti edad, etc.
           </p>
-          <p>Venis creates experiences that rewind time on your skin.</p>
+          <p>Venis crea experiencias marcadas en la piel.</p>
           <h2>Hydrafacial</h2>
           <p>
-            Hydrafacial: The treatment to hydrate and rejuvenate the skin of
-            your face. The Hydrafacial is a non-invasive treatment for the face
-            that combines cleansing, removal of impurities and peeling, and
-            infiltration of serums in a single session to obtain fresh, healthy,
-            radiant and glowing skin.
+            Hydrafacial: El tratamiento para hidratar y rejuvenecer la piel de
+            tu rostro Que es el Hydrafacial un procedimiento no invasivo para el
+            rostro que combina en una misma sesión limpieza, extracción de
+            impurezas y peeling, e infiltración de sueros para obtener una piel
+            de aspecto fresco, saludable, radiante y brillante.
           </p>
           <p>
-            This treatment has benefits that help improve skin hydration and
-            eliminate the appearance of fine lines, hyperpigmentation, oily skin
-            control, and wrinkles.
+            Este tratamiento tiene beneficios que ayuda a mejorar la hidratación
+            de la piel y a eliminar la apariencia de líneas finas,
+            hiperpigmentación, control de grasa y arrugas.
           </p>
           <p>
-            The suggested cost to the public in Mexico varies according to the
-            geographic area and the additional services that the specialist adds
-            to the treatment.
+            El costo sugerido al público en México varía según la zona
+            geográfica y los servicios adicionales que el especialista agregue
+            al tratamiento.
           </p>
           <p>
-            First, a deep cleaning is carried out where all the impurities from
-            the skin of the face are removed. Once the face is completely clean,
-            a bath of vitamins, antioxidants, and moisturizers is applied,
-            through serums. Luxurious Advanced Skin Care Service Near You
+            Primero se realiza una limpieza profunda en donde se eliminan todas
+            las impurezas de la piel del rostro. Una vez se tenga el rostro
+            completamente limpio, se aplica un baño de vitaminas, antioxidantes,
+            e hidratantes, a través de sueros.
           </p>
-          <h2>Non surgical face lifting</h2>
+          <h2>Hollywood peel </h2>
           <p>
-            At Venis we want to provide you with the best treatments, one of
-            them is the lifting without surgery.
-          </p>
-          <h3>What is a non surgical face lifting? </h3>
-          <p>
-            It is a minimally invasive non-surgical face lift that aims to
-            improve the appearance of wrinkles and fine lines, giving patients a
-            more youthful appearance. We personalize the treatment, adjusting to
-            the needs of each of our clients to guarantee and maximize the
-            desired results.
+            El tratamiento de los famosos Hollywood peel: la mejor tecnología de
+            rejuvenecimiento facial
           </p>
           <p>
-            This treatment is used to enjoy a younger appearance without having
-            to undergo surgery, obtaining multiple advantages since the
-            application requires a few minutes and practically does not require
-            a recovery period. In addition, one of the great advantages of a
-            non-surgical facelift is its reduced cost. We recommend the
-            treatment for both men and women between 40 and 60 years of age to
-            prevent skin loss and to be able to reinforce elasticity in time
-            without damaging the skin. Venis Hydrafacial & Non surgical face
-            lifting
+            Que es el Hollywood peel es un tratamiento que ofrece los mejores
+            resultados de rejuvenecimiento facial, sin dolor, sin anestesia o
+            poco tiempo de recuperación. Este servicio consta de la más alta e
+            innovadora tecnología en cuanto a láser, conocida como el Alma Q- Q
+            Switch de Alma Hollywood peel Laser.
           </p>
           <p>
-            This ultrasound-based treatment is used to improve wrinkles and
-            cleavage lines, lift the skin of the neck, eyebrow and lower chin,
-            it can also be applied on the cheeks, jaw profile, expression lines
-            of the eyes, narrowing and elevation of the nose, lifting of
-            eyebrows, perfection of the appearance of the neck, rejuvenation of
-            hands and feet, improvement of flaccidity in arms, legs and Venis
-            Hydrafacial y Hollywood Peel buttocks.
+            Es aplicable para la mayoría de los fototipos de piel, obteniendo
+            como sus beneficios una piel luminosa, lisa y fresca con tan solo un
+            tratamiento. Algunas celebridades, como Angelina Jolie y Kim
+            Kardashian, se han vuelto fanáticas de este tratamiento, que de ahí
+            toma su nombre.
+          </p>
+          <p>
+            El precio no es tan elevado conforme a los beneficios que otorga.{" "}
+          </p>
+          <h3>Lifting facial sin cirugía. </h3>
+          <p>
+            En Venis queremos proporcionarte los mejores tratamientos, uno de
+            ellos es el lifting sin cirugía.
+          </p>
+          <p>
+            ¿Qué es un lifting sin cirugía? Es un estiramiento facial no
+            quirúrgico mínimamente invasivo cuyo objetivo es mejorar la
+            apariencia de arrugas y líneas finas, dando a los pacientes una
+            apariencia más juvenil. Personalizamos el tratamiento, ajustándose a
+            las necesidades de cada uno de nuestros clientes para garantizar y
+            maximizar los resultados deseados.
+          </p>
+          <p>
+            Este tratamiento sirve para poder disfrutar de una apariencia más
+            joven sin necesidad de pasar por el quirófano, obteniendo múltiples
+            ventajas ya que la aplicación requiere de unos minutos y
+            prácticamente no necesitan un período de recuperación. Además, una
+            de las grandes ventajas del lifting sin cirugía es su costo
+            reducido. Recomendamos el tratamiento para pacientes tanto en
+            hombres como en mujeres de entre 40 y 60 años para prevenir la caída
+            de la piel y poder reforzar la elasticidad a tiempo sin dañar la
+            piel.
+          </p>
+          <p>
+            Este tratamiento basado en ultrasonidos sirve para mejorar las
+            arrugas y líneas del escote, elevan la piel del cuello, ceja y baja
+            del mentón, también se puede aplicar en las mejillas ,perfil de la
+            mandíbula, líneas de expresión de los ojos, estrechamiento y
+            elevación de la nariz, levantamiento de cejas, perfección del
+            aspecto del cuello, rejuvenecimiento de manos y pies, mejora de la
+            flacidez en brazos, piernas y glúteos.
           </p>
         </section>
         <section className="hero">

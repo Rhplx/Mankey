@@ -6,7 +6,7 @@ import ShoppingCart from "../images/icons/shopping-cart.png"
 import MenuIcon from "../images/icons/menu-icon.png"
 import CloseMenu from "../images/icons/icon-close.png"
 import { Jump } from "react-jump"
-import Mexico from "../images/mx.png"
+import Usa from "../images/usa.png"
 
 export default function Header({ switchLang }) {
   const [t] = useTranslation()
@@ -50,8 +50,8 @@ export default function Header({ switchLang }) {
                 >
                   ES
                 </button> */}
-                <a href="/es">
-                  <img className="languageIcon" src={Mexico} alt="Mexico" />
+                <a href="/">
+                  <img className="languageIcon" src={Usa} alt="Usa" />
                 </a>
               </li>
               <li>
@@ -86,8 +86,8 @@ export default function Header({ switchLang }) {
           </li>
           <li>Blog</li>
           <li>
-            <a href="/es">
-              <img className="languageIcon" src={Mexico} alt="Mexico" />
+            <a href="/">
+              <img className="languageIcon" src={Usa} alt="Usa" />
             </a>
           </li>
           <li>

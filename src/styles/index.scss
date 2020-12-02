@@ -131,10 +131,9 @@ input:focus {
   position: absolute;
   z-index: -10;
 }
-
 .hero {
   @include backgroundStyle;
-  background-image: url("../images/hero-bg.png");
+  background-image: url("../images/hero-bg-ali.png");
   padding: 200px 0 320px;
   margin-top: -100px;
   @include media(xl) {
@@ -994,7 +993,7 @@ input:focus {
       }
     }
     &:nth-of-type(2) {
-      padding: 20px 80px;
+      padding: 20px 50px 20px 120px;
       @include media(md) {
         text-align: center;
       }

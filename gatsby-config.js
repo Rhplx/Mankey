@@ -1,8 +1,8 @@
 module.exports = {
-  // pathPrefix: `./`,
+  pathPrefix: `/es`,
   siteMetadata: {
-    title: `🌿Venis Skin - Luxurious Advanced Skin Care Service Near You`,
-    description: `The First and Only Personalized Tool to Give you the Results you are Looking For in your Skin`,
+    title: `🌿Venis Skin | Servicio Avanzado en Skincare de lujo cerca de ti`,
+    description: `El Primer y único Servicio Personalizado que Ofrece los Resultados que estas Buscando para tu Piel`,
     author: `@rhplx`,
   },
   plugins: [
