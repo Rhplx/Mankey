@@ -6,7 +6,6 @@ import ShoppingCart from "../images/icons/shopping-cart.png"
 import MenuIcon from "../images/icons/menu-icon.png"
 import CloseMenu from "../images/icons/icon-close.png"
 import { Jump } from "react-jump"
-import Usa from "../images/usa.png"
 
 export default function Header({ switchLang }) {
   const [t] = useTranslation()
