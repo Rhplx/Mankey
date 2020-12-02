@@ -134,7 +134,8 @@ input:focus {
 
 .hero {
   @include backgroundStyle;
-  background-image: url("../images/hero-bg.png");
+  background-position: bottom right 20%;
+  background-image: url("../images/hero-bg-ali.png");
   padding: 200px 0 320px;
   margin-top: -100px;
   @include media(xl) {
@@ -946,7 +947,6 @@ input:focus {
   @include media(sm) {
     grid-template-columns: 1fr;
   }
-
   article {
     position: relative;
     z-index: 4;
@@ -994,8 +994,9 @@ input:focus {
       }
     }
     &:nth-of-type(2) {
-      padding: 20px 80px;
+      padding: 20px 30px 20px 155px;
       @include media(md) {
+        padding: 20px 80px;
         text-align: center;
       }
     }
