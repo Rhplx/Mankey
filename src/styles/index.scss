@@ -995,6 +995,7 @@ input:focus {
     &:nth-of-type(2) {
       padding: 20px 50px 20px 120px;
       @include media(md) {
+        padding: 20px 80px;
         text-align: center;
       }
     }

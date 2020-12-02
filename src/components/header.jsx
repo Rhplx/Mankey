@@ -50,9 +50,7 @@ export default function Header({ switchLang }) {
                 >
                   ES
                 </button> */}
-                <a href="/">
-                  <img className="languageIcon" src={Usa} alt="Usa" />
-                </a>
+                <a href="/">ES</a>
               </li>
               <li>
                 <img src={ShoppingCart} alt="Shopping Cart" />
@@ -86,9 +84,7 @@ export default function Header({ switchLang }) {
           </li>
           <li>Blog</li>
           <li>
-            <a href="/">
-              <img className="languageIcon" src={Usa} alt="Usa" />
-            </a>
+            <a href="/">ES</a>
           </li>
           <li>
             <img src={ShoppingCart} alt="Shopping Cart" />
