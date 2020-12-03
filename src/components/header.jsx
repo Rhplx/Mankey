@@ -6,7 +6,6 @@ import ShoppingCart from "../images/icons/shopping-cart.png"
 import MenuIcon from "../images/icons/menu-icon.png"
 import CloseMenu from "../images/icons/icon-close.png"
 import { Jump } from "react-jump"
-import Mexico from "../images/mx.png"
 
 export default function Header({ switchLang }) {
   const [t] = useTranslation()
@@ -35,21 +34,6 @@ export default function Header({ switchLang }) {
               </li>
               <li>Blog</li>
               <li>
-                {/* <button
-                  onClick={() => {
-                    switchLang("en")
-                  }}
-                >
-                  EN
-                </button>
-                |
-                <button
-                  onClick={() => {
-                    switchLang("es")
-                  }}
-                >
-                  ES
-                </button> */}
                 <a href="/es">ES</a>
               </li>
               <li>

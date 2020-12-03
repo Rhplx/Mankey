@@ -43,6 +43,7 @@ import Facebook from "../images/icons/icon-fb.png"
 import Share from "../images/icons/icon-share.png"
 import Quotes from "../images/comillas.png"
 import ExpertMobile from "../images/expert-banner-mobile.png"
+import { Jump } from "react-jump"
 
 export default function index() {
   const [windowLoaded, setWindowLoaded] = useState(undefined)
@@ -173,7 +174,9 @@ export default function index() {
               <p>{t("heroParagraph")}</p>
               <p>{t("heroParagraphTwo")}</p>
               <span>
-                <button className="primaryButton">{t("heroButton")}</button>
+                <Jump target={".call"}>
+                  <button className="primaryButton">{t("heroButton")}</button>
+                </Jump>
               </span>
             </div>
           </div>
@@ -253,7 +256,9 @@ export default function index() {
               <p className="generalParagraph">{t("deepParagraph")}</p>
               <p className="generalParagraph">{t("deepParagraphTwo")}</p>
               <span className="buttonContainer">
-                <button className="primaryButton">{t("deepButton")}</button>
+                <Jump target={".call"}>
+                  <button className="primaryButton">{t("deepButton")}</button>{" "}
+                </Jump>
               </span>
             </article>
             <article>
@@ -321,7 +326,9 @@ export default function index() {
         <section className="ageless">
           <div className="fixed">
             <h2>{t("ageless")}</h2>
-            <button className="primaryButton">{t("agelessButton")}</button>
+            <Jump target={".call"}>
+              <button className="primaryButton">{t("agelessButton")}</button>{" "}
+            </Jump>
           </div>
         </section>
         <section className="benefits">
@@ -379,7 +386,9 @@ export default function index() {
           <article>
             <h2>{t("skincareTitle")}</h2>
             <p>{t("skincareSubtitle")}</p>
-            <button className="primaryButton">{t("skincareButton")}</button>
+            <Jump target={".call"}>
+              <button className="primaryButton">{t("skincareButton")}</button>{" "}
+            </Jump>
           </article>
         </section>
         <section className="results">
